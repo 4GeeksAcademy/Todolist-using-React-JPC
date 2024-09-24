@@ -20,7 +20,7 @@ const List = () => {
 
     return (
         <div className="container w-50 justify-content-center">
-            <ul className="list-group">
+            <ul className="list-group border-none">
                 <li className="list-group-item">
                     <input
                         type="text" 
@@ -36,8 +36,8 @@ const List = () => {
                             X
                         </button>
                     </li>
-                ))}
-                <li className="count list-group-item text-start" >{itemsArray.length} items left</li>
+                    ))}
+                <li className="count list-group-item text-start">{itemsArray.length} items left</li>
             </ul>
         </div>
     );
