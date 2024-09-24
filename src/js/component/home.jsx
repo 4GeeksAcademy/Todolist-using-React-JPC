@@ -18,8 +18,8 @@ const footerData = [
 
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1>ToDo List</h1>
+		<div className="text-center" >
+			<h1 className="title">ToDo List</h1>
 			<List/>
 			<Footer properties={footerData}/>
 		</div>

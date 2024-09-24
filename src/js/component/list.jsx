@@ -22,7 +22,7 @@ const List = () => {
         <div className="container w-50 justify-content-center">
             <ul className="list-group">
                 <li className="list-group-item">
-                    <input 
+                    <input
                         type="text" 
                         value={inputValue} 
                         onKeyDown={addArray} 
@@ -30,17 +30,14 @@ const List = () => {
                     />
                 </li>
                 {itemsArray.map((item, index) => (
-                    <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
+                    <li key={index} className="item list-group-item d-flex justify-content-between align-items-center">
                         {item}
-                        <button 
-                            className="btn btn-danger btn-sm" 
-                            onClick={() => deleteItem(index)}
-                        >
+                        <button className="btn btn-sm delete-button" onClick={() => deleteItem(index)}>
                             X
                         </button>
                     </li>
                 ))}
-                <li className="list-group-item text-start" >{itemsArray.length} items left</li>
+                <li className="count list-group-item text-start" >{itemsArray.length} items left</li>
             </ul>
         </div>
     );
