@@ -11,6 +11,52 @@
 
 */
 
+.list-group-item {
+    position: relative;
+}
+
+.item{
+    color: rgba(128, 128, 128, 0.548);
+}
+
+.count{
+    color: rgba(128, 128, 128, 0.548);
+}
+
+.delete-button {
+    display: none; 
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: none;
+    border: none;
+    color: rgba(128, 128, 128, 0.548);
+}
+
+.list-group-item:hover .delete-button {
+    display: block;
+}
+
+.title{
+ font-size: 4rem;
+ color: rgba(128, 128, 128, 0.26);
+}
+
+.text-center{
+    background-color: rgba(128, 128, 128, 0.158);
+    padding-bottom: 100%;
+}
+
+.list-group{
+    background-color: rgba(128, 128, 128, 0.651);
+    
+}
+
+
+
+
+
 .footer{
     background-color: rgba(128, 128, 128, 0.548);
 }
